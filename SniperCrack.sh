@@ -187,7 +187,7 @@ SetChan(){
 }
 
 ReadHelp(){
-	sudo mate-terminal -hold -e cat HELP.md 
+	sudo mate-terminal -hold -e cat README.nfo 
 }
 
 
