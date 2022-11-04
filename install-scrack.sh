@@ -36,7 +36,7 @@ clear
 ##############################
 #  CHECKING FOR AIRCRACK-NG  #
 ##############################
-sudo PKG_OK=$(dpkg-query -W --showformat='${Status}\n' aircrack-ng | grep "install ok installed")
+PKG_OK=$(dpkg-query -W --showformat='${Status}\n' aircrack-ng | grep "install ok installed")
 echo Checking for aircrack-ng: $PKG_OK
 if [ "" == "$PKG_OK" ]; then
   echo "aircrack-ng not installed. Attempting to install aircrack-ng now..."
@@ -47,7 +47,7 @@ fi
 #######################
 #  CHECKING FOR MDK4  #
 #######################
-sudo PKG_OK=$(dpkg-query -W --showformat='${Status}\n' mdk4 | grep "install ok installed")
+PKG_OK=$(dpkg-query -W --showformat='${Status}\n' mdk4 | grep "install ok installed")
 echo Checking for mdk4: $PKG_OK
 if [ "" == "$PKG_OK" ]; then
   echo "mdk4 not installed. Attempting to install mdk4 now..."
@@ -58,7 +58,7 @@ fi
 #########################
 #  CHECKING FOR CRUNCH  #
 #########################
-sudo PKG_OK=$(dpkg-query -W --showformat='${Status}\n' crunch | grep "install ok installed")
+PKG_OK=$(dpkg-query -W --showformat='${Status}\n' crunch | grep "install ok installed")
 echo Checking for crunch: $PKG_OK
 if [ "" == "$PKG_OK" ]; then
   echo "crunch not installed. Attempting to install crunch now..."
@@ -69,7 +69,7 @@ fi
 #######################
 #  CHECKING FOR WASH  #
 #######################
-sudo PKG_OK=$(dpkg-query -W --showformat='${Status}\n' wash | grep "install ok installed")
+PKG_OK=$(dpkg-query -W --showformat='${Status}\n' wash | grep "install ok installed")
 echo Checking for wash: $PKG_OK
 if [ "" == "$PKG_OK" ]; then
   echo "wash not installed. Attempting to install wash now..."
