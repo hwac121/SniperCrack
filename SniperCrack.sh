@@ -255,7 +255,7 @@ while [ "$menu" != 1 ]; do
 			echo -e "\e[37mSelect the small terminal popup window, enter [Ctrl+c], and close it to continue\e[0m"
 			echo -e "\e[31mNOTE FIRST!:\e[0m \e[37mBe sure to copy down the bssid, essid, channel and station of the\e[0m"
 			echo -e "\e[37mintended Target BEFORE closing the terminal popup window!\e[0m"
-			sudo mate-terminal -hold -e airodump-ng $lanmon &
+			mate-terminal -hold -e airodump-ng $lanmon &
 			sleep 3 
 			clear
 		break
@@ -293,7 +293,7 @@ while [ "$menu" != 1 ]; do
 			splash
 			echo -e " "
 			echo -e "\e[33mWhen you are done, Ctrl+c and close the popup terminal to continue.\e[0m"
-			sudo mate-terminal -hold -e airmon-ng &
+			mate-terminal -hold -e airmon-ng &
 		break
 		;;
 
@@ -306,7 +306,7 @@ while [ "$menu" != 1 ]; do
 			splash
 			echo -e " "
 			echo -e "\e[33mWhen you are done, Ctrl+c and close the popup terminal to continue.\e[0m"
-			sudo mate-terminal -hold -e iwconfig &
+			mate-terminal -hold -e iwconfig &
 		break
 		;;
 
@@ -400,7 +400,7 @@ while [ "$menu" != 1 ]; do
 			echo -e "(ie. Use numbers 1-9)"
 			read max
 			sleep 0.15
-			sudo mate-terminal -hold -e aircrack-ng $capfile --bssid $bssid | crunch $min $max $specialchars -w-
+			mate-terminal -hold -e aircrack-ng $capfile --bssid $bssid | crunch $min $max $specialchars -w-
 			sleep 1.5
 		break
 		;;
@@ -418,7 +418,7 @@ while [ "$menu" != 1 ]; do
 			echo -e "Please enter the path to your hash/*.cap file."
 			read capfile
 			echo -e " "
-			sudo mate-terminal -hold -e aircrack-ng $capfile -w $wordlist
+			mate-terminal -hold -e aircrack-ng $capfile -w $wordlist
 			sleep 1.5
 		break
 		;;
