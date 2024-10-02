@@ -2,15 +2,14 @@
 
 # Title: SniperCrack wifi pentesting
 # Version: 1.0
-# Contact: hwac121@protonmail.com
-
-# URL: http://www.majikcat.com
-# GitHub: https://github.com/hwac121/Snatch.git
+# Author: RJ Levesque, Jr. - Majik Cat Security
+# Contact: hwac121@torbox.onion
+# GitHub: https://github.com/hwac121
 
 #-----------------------------------------------------------------
 
 # Description:
-# Snatch is used to find, choose, and snatch a handshake from a network
+# SniperCrack is used to find, choose, and snatch a handshake from a network
 # AP and it's connecting client. Do not use on a network without
 # explicit permission as this would be illegal. This software was
 # designed strictly for pentesting and educational purposes only.
@@ -400,7 +399,7 @@ while [ "$menu" != 1 ]; do
 			echo -e "(ie. Use numbers 1-9)"
 			read max
 			sleep 0.15
-			mate-terminal -hold -e aircrack-ng $capfile --bssid $bssid | crunch $min $max $specialchars -w-
+			mate-terminal -hold -e crunch $min $max $specialchars -w- | aircrack-ng $capfile --bssid $bssid
 			sleep 1.5
 		break
 		;;
