@@ -1,11 +1,11 @@
 #!/bin/bash
 
+
 # Title: SniperCrack wifi pentesting
 # Version: 1.0
-# Contact: hwac121@protonmail.com
-
-# URL: http://www.majikcat.com
-# GitHub: https://github.com/hwac121/Snatch.git
+# Author: RJ Levesque, Jr. - Majik Cat Security
+# Contact: hwac121@torbox.onion
+# GitHub: https://github.com/hwac121
 
 #-----------------------------------------------------------------
 
